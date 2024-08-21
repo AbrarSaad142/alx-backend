@@ -1,8 +1,8 @@
-#!/usr/bin/python3
-"""
-Create a class FIFOCache that
-inherits from BaseCaching and is a caching system
-"""
+
+#!/usr/bin/env python3
+
+'''Task 1: FIFO caching
+'''
 
 
 from collections import OrderedDict
@@ -10,10 +10,10 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    """
-    Create a class FIFOCache that
-    inherits from BaseCaching and is a caching system
-    """
+    '''A class `FIFOCache` that inherits from
+       `BaseCaching` and is a caching system.
+    '''
+
     def __init__(self):
         super().__init__()
         self.cache_data = OrderedDict()
@@ -22,6 +22,7 @@ class FIFOCache(BaseCaching):
         '''assign to the dictionary `self.cache_data` the
            `item` value for the key `key`
         '''
+
         if key is None or item is None:
             return
 
