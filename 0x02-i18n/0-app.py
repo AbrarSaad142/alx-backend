@@ -8,6 +8,8 @@ from flask import render_template
 
 app = Flask(__name__)
 @app.route('/', strict_slashes=False)
+
+
 def index() -> str:
     """REnder a basic html templete"""
     return render_template('0-index.html')
